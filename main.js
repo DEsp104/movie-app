@@ -1,13 +1,20 @@
 import './style.css';
+import { getMovie } from './services/getMovieByName';
+// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-undef
+const { URL_ADDRESS, API_KEY } = config;
+
+// const result = getMovie(URL_ADDRESS, API_KEY, 'red');
+// eslint-disable-next-line no-undef
 
 // eslint-disable-next-line no-undef
-const api = config.MY_KEY;
-
-console.log(api);
-// eslint-disable-next-line no-undef
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//   </div>`;
-
-// eslint-disable-next-line no-undef
-// setupCounter(document.querySelector('#counter'));
+document.addEventListener('click', (e) => {
+  if (e.target && e.target.id === 'movie-button') {
+    e.preventDefault();
+    // localStorage.clear();
+    // eslint-disable-next-line no-undef
+    // eslint-disable-next-line no-undef
+    const inputText = document.getElementById('movie-search').value;
+    getMovie(URL_ADDRESS, API_KEY, inputText);
+  }
+});
