@@ -16,10 +16,6 @@ export async function getMovie(url, apiKey, searchInput) {
       const movieDescriptionObject = JSON.parse(localStorage.getItem('testObject'));
 
       printMovie(movieDescriptionObject);
-
-      // eslint-disable-next-line no-restricted-globals, no-undef
-      // location.reload();
-      // console.log(localStorage)
     })
     .catch((err) => {
       console.log(err);

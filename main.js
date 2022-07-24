@@ -6,7 +6,7 @@ const { URL_ADDRESS, API_KEY } = config;
 
 // const result = getMovie(URL_ADDRESS, API_KEY, 'red');
 // eslint-disable-next-line no-undef
-
+localStorage.removeItem('testObject');
 // eslint-disable-next-line no-undef
 document.addEventListener('click', (e) => {
   if (e.target && e.target.id === 'movie-button') {

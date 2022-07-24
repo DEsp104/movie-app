@@ -18,12 +18,14 @@ const button = document.createElement('button');
 const buttonText = document.createTextNode('Search');
 button.setAttribute("id", "movie-button");
 
-
-
 formContainer.appendChild(movieHeader);
+
 movieHeader.appendChild(headerText);
+
 formContainer.appendChild(form);
+
 form.appendChild(input);
+
 form.appendChild(button);
 
 button.appendChild(buttonText);
