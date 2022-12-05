@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Search App</title>
+    <script type="module" src='./components/movieDescription.js' defer></script>
+    <script type="module" src='./components/favorite.js' defer></script>
   </head>
   <body>
     <div id="app"></div>
 
+
+    <movie-description></movie-description>
+    <favorite-movie></favorite-movie>
+    
     <script type="text/javascript" src='./configs/config.js'></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="module" src="main.js"></script>
     <script type="module" src="./components/form.js"></script>
-    <script type="module" src="./components/movieTemplate.js"></script>
+    <!-- <script type="module" src="./components/movieTemplate.js"></script> -->
   </body>
 </html>
